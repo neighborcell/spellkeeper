@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>spellkeeper</title>
+  <script src="./res/vue@2.6.12.js"></script>
+  <link rel="stylesheet" href="./res/bootstrap.css">
+  <link rel="stylesheet" href="./hue.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="text-white cosmos">
+  <div id="vApp">
+    <!-- nav -->
+    <nav id="vNav" class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <!--
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        -->
+        
+        <a class="navbar-brand">spell</a>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn ml-2 btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container mt-3">
+      <div class="row g-3">
+        <div class="col order-md-last">
+          <div class="card p-2 shadow underTheEarth">
+            <h3 class="">back</h3>
+            <div class="input-group mt-1">
+              <span class="input-group-text">複数形</span>
+              <input type="text" class="form-control" value="backs" readonly>
+            </div>
+            <div class="input-group mt-1">
+              <span class="input-group-text">進行形</span>
+              <input type="text" class="form-control" value="backing" readonly>
+            </div>
+            <div class="input-group mt-1">
+              <span class="input-group-text">過去形</span>
+              <input type="text" class="form-control" value="backed" readonly>
+            </div>
+            <div class="input-group mt-1">
+              <span class="input-group-text">副詞</span>
+              <input type="text" class="form-control" value="うしろに" readonly>
+            </div>
+            <div class="input-group mt-1">
+              <span class="input-group-text">副詞</span>
+              <input type="text" class="form-control" value="返す" readonly>
+            </div>
+     </div>
+        </div>
+        <!-- // // -->
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge bg-secondary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+          </ul>
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--
+    <div id="vList" class="container">
+      <table>
+        <thead v-pre>
+          <tr>
+            <th class="id">ID</th>
+            <th class="comment">コメント</th>
+            <th class="state">状態</th>
+            <th class="button">-</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in computedTodos" v-bind:key="item.id" v-bind:class="{done:item.state}">
+            <th>{{ item.id }}</th>
+            <td>{{ item.comment }}</td>
+            <td class="state">
+              <button v-on:click="doChangeState(item)">
+                {{ labels[item.state] }}
+              </button>
+            </td>
+            <td class="button">
+              <button v-on:click="doRemove(item)">
+                削除
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    -->
+  </div>
+  <script src="./res/bootstrap.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
